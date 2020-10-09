@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clima</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-image: url("https://www.ifam.es/uk/wp-content/uploads/sites/15/2015/08/imagenes-de-paisajes-hermosos-4-874x542.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-color: #000000;
+      }
+    </style>
+    <h1>El Detector de Clima de tu ciudad</h1>
+    <input id="ciudad" type="text" placeholder="Nombre de tu ciudad" />
+    <button id="botonBuscar">Buscar</button>
+    <h2 id="nombreCiudad"></h2>
+    <div>
+      <h2>Temperatura Actual</h2>
+      <h2 id="temperaturaActual"></h2>
+    </div>
+    <div>
+      <h2>Temperatura Minima</h2>
+      <h2 id="temperaturaMin"></h2>
+    </div>
+    <div>
+      <h2>Temperatura Maxima</h2>
+      <h2 id="temperaturaMax"></h2>
+    </div>
+  </body>
+  <script src="./dataViewer.js"></script>
+  <script src="./apiweathercall.js"></script>
+</html>
